@@ -22,17 +22,35 @@ h2 {
     padding-right: 25%;
 }
 
-.container {
-    display: flex;
-    gap: 35px;
-}
 
 .row {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 0.5fr 0.8fr 2fr;
+    gap: 30px;
+    border-bottom: 1px solid rgb(229 231 235);
+    margin-top: 1%;
 }
 
 .header {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
+}
+
+button,
+select {
+    background-color: rgb(64, 64, 93);
+    color: rgb(229 231 235);
+    padding: 1.1%;
+    border: 0;
+    border-radius: 5%;
+}
+
+button:hover {
+    background-color: rgb(142, 142, 215);
+    color: rgb(46, 46, 46);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(98, 98, 211);
 }
