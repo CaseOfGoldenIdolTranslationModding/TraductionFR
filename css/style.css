@@ -6,6 +6,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a:visited {
+    color: rgb(173, 118, 188);
+}
+
 h1 {
     text-align: center;
     margin-bottom: 5%;
@@ -25,7 +29,7 @@ h2 {
 
 .row {
     display: grid;
-    grid-template-columns: 0.5fr 0.8fr 2fr;
+    grid-template-columns: 0.2fr 0.8fr 2fr;
     gap: 30px;
     border-bottom: 1px solid rgb(229 231 235);
     margin-top: 1%;
