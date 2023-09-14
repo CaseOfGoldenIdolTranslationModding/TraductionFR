@@ -83,3 +83,46 @@ ul.horizontal li a {
 ul.horizontal li a.active {
     background-color: rgb(114, 3, 136);
 }
+
+h3.problem {
+    margin-bottom: 4%;
+}
+
+.form-group {
+    margin-bottom: 2.5%;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input {
+    padding: 8px 10px;
+    line-height: 120%;
+}
+
+.form-group input:invalid,
+.form-group textarea:invalid,
+.form-group select:invalid {
+    border: 3px solid red;
+    border-radius: 5px;
+}
+
+.form-group input:invalid+span::before {
+    content: "✖";
+    color: red;
+}
+
+.form-group input:valid+span::before {
+    content: "✓";
+    color: green;
+}
+
+button.submit-problem {
+    padding: 1%;
+}
+
+.form-group textarea {
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+}

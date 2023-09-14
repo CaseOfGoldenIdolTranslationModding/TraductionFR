@@ -21,10 +21,69 @@
         </ul>
     </nav>
     <section>
-        <div id="ff-compose"></div>
-        <script async defer
-            src="https://formfacade.com/include/114804634976479895500/form/1FAIpQLSevNowwgrc0XijFzPAKLEqtlxb7EuvPvvM41pETEQJtsXxekA/classic.js?div=ff-compose"></script>
+        <h1>Problème dans la traduction</h1>
+        <h3 class="problem">Signaler un problème dans la traduction :</h3>
+        <form target="_self" method="POST" id="form"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSevNowwgrc0XijFzPAKLEqtlxb7EuvPvvM41pETEQJtsXxekA/formResponse">
+            <div class="form-group">
+                <label for="gameVersion">Version du jeu :</label>
+                <input type="text" id="gameVersion" name="entry.171569189" placeholder="2.0.5"
+                    pattern="[0-9].[0-9].[0-9]" required />
+                <span></span>
+            </div>
+            <div class="form-group">
+                <label for="patchVersion">Version de la traduction :</label>
+                <input type="text" id="patchVersion" name="entry.1906005135" placeholder="2.0.1"
+                    pattern="[0-9].[0-9].[0-9]" required />
+                <span></span>
+            </div>
+            <div class="form-group">
+                <label for="location">Où est le problème :</label>
+                <select id="location" name="entry.1680095167" required>
+                    <option value="" selected>Sélectionner le scénario</option>
+                    <option id="-1">Menu principal</option>
+                    <option id="0">Chapitre 1 - Scénario 1</option>
+                    <option id="1">Chapitre 1 - Scénario 2</option>
+                    <option id="2">Chapitre 1 - Scénario 3</option>
+                    <option id="3">Chapitre 2 - Scénario 1</option>
+                    <option id="4">Chapitre 2 - Scénario 2</option>
+                    <option id="5">Chapitre 2 - Scénario 3</option>
+                    <option id="6">Chapitre 3 - Scénario 1</option>
+                    <option id="7">Chapitre 3 - Scénario 2</option>
+                    <option id="8">Chapitre 3 - Scénario 3</option>
+                    <option id="9">Chapitre 4 - Scénario 1</option>
+                    <option id="10">Chapitre 4 - Scénario 2</option>
+                    <option id="11">Epilogue</option>
+                    <option id="12">Spider of Lanka - Scénario 1</option>
+                    <option id="13">Spider of Lanka - Scénario 2</option>
+                    <option id="14">Spider of Lanka - Scénario 3</option>
+                    <option id="15">Lemurian Vampire - Scénario 1</option>
+                    <option id="16">Lemurian Vampire - Scénario 2</option>
+                    <option id="17">Lemurian Vampire - Scénario 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="desc">Description du problème :</label>
+                <textarea type="textarea" id="desc" name="entry.1262724611"
+                    placeholder="Faut de frappe, erreur de traduction, texte qui dépasse" required cols="60"
+                    rows="4"></textarea>
+                <span></span>
+            </div>
+            <button type="button" onclick="send();" class="submit-problem">Envoyer</button>
+        </form>
     </section>
+    <script>
+        function send() {
+            let form = document.getElementById("form");
+            let gameVersion = document.getElementById("gameVersion").value;
+            let patchVersion = document.getElementById("patchVersion").value;
+            let location = document.getElementById("location").value;
+            let desc = document.getElementById("desc").value;
+            let link = "https://docs.google.com/forms/d/e/1FAIpQLSevNowwgrc0XijFzPAKLEqtlxb7EuvPvvM41pETEQJtsXxekA/formResponse?usp=pp_url&entry.171569189=" + gameVersion + "&entry.1906005135=" + patchVersion + "&entry.1680095167=" + location + "&entry.1262724611=" + desc;
+            link = link.split(' ').join('+')
+            window.location = link;
+        }
+    </script>
 </body>
 
 </html>
