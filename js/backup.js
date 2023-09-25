@@ -2,7 +2,7 @@ let button = document.getElementById("dl-save");
 let select = document.getElementById("select-save");
 
 button.addEventListener('click', function () {
-    let url = "data:text/html,backup_files/" + select.selectedIndex + "_savegame_fr.save";
+    let url = "https://caseofgoldenidoltranslationmodding.github.io/TraductionFR/backup_files/" + select.selectedIndex + "_savegame_fr.save";
     download(url, select.selectedIndex + "_savegame_fr.save")
 });
 
