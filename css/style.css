@@ -117,3 +117,33 @@ h3.problem {
 button.submit-problem {
     padding: 1%;
 }
+
+.row {
+    a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        width: fit-content;
+        height: fit-content;
+        padding: 12px;
+        border-radius: 10px;
+        background-color: rgb(128, 32, 152);
+        margin-top: -10px;
+    }
+
+    a:visited {
+        color: rgb(48, 26, 76)
+    }
+
+    a:hover,
+    a:focus {
+        background-color: rgb(178, 89, 208);
+        color: rgb(225, 189, 255);
+        cursor: pointer;
+    }
+
+    a::after {
+        content: ' ⭳';
+        font-weight: bolder;
+    }
+}
