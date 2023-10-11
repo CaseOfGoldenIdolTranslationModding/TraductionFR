@@ -20,8 +20,31 @@
             <li><a href="problem.html">Signaler un problème</a></li>
         </ul>
     </nav>
+    <div class="versions">
+        <a href="#steam"><button id="steam_btn" class="version" onclick="changeVersion('steam')">Steam</button></a>
+        <a href="#gog"><button id="gog_btn" class="version" onclick="changeVersion('gog')">GOG</button></a>
+    </div>
     <section>
-        <div class="container">
+
+        <div class="container" id="gog_container" style="display: none;">
+            <div class="row">
+                <p class="header">Versions du jeu</p>
+                <p class="header">Versions de la traduction</p>
+                <p class="header">Informations</p>
+            </div>
+            <div class="row">
+                <p>2.0.1a</p>
+                <p>
+                    <a
+                        href="https://github.com/CaseOfGoldenIdolTranslationModding/TraductionFR/releases/download/v2.0.4/TheCaseOfTheGoldenIdol-GOG-2.0.1a_FR-2.0.4.zip">2.0.4</a>
+                </p>
+                <div>
+                    <p>Jeu principal et les 2 DLC traduits, comme la version Steam 2.0.4</p>
+                    <p>Prise en compte des spécificités de la version GOG</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="steam_container">
             <div class="row">
                 <p class="header">Versions du jeu</p>
                 <p class="header">Versions de la traduction</p>
@@ -200,7 +223,7 @@
         </div>
         <p><a href="index.html">Retour à l'accueil</a></p>
     </section>
-
+    <script src="js/download.js"></script>
 </body>
 
 </html>

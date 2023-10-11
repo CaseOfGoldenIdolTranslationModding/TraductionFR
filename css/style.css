@@ -79,6 +79,10 @@ ul.horizontal {
         text-decoration: none;
     }
 
+    li a:hover {
+        background-color: rgb(160, 66, 179);
+    }
+
     li a.active {
         background-color: rgb(114, 3, 136);
     }
@@ -145,5 +149,28 @@ button.submit-problem {
     a::after {
         content: ' ⭳';
         font-weight: bolder;
+    }
+}
+
+.versions {
+    margin-top: 0.2%;
+
+    button:hover {
+        color: rgb(229 231 235);
+    }
+
+    button.version {
+        width: 33%;
+        border-radius: 0;
+        background-color: rgb(49, 46, 53);
+    }
+
+    button.version:hover {
+        background-color: rgb(160, 66, 179);
+    }
+
+    button.version[disabled] {
+        background-color: rgb(114, 3, 136);
+        cursor: auto;
     }
 }
