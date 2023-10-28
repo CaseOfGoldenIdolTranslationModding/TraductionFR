@@ -21,6 +21,10 @@ section {
     margin: 2.5% 15% 2.5% 5%;
 }
 
+#video {
+    margin-left: 15px;
+}
+
 section>p,
 h2 {
     margin-left: 2%;
