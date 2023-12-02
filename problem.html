@@ -11,29 +11,28 @@
 </head>
 
 <body>
-    <h1>The Case Of The Golden Idol - Traduction Française</h1>
+    <h1>Problème dans la traduction</h1>
     <nav class="navbar">
         <ul class="horizontal">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="download.html">Téléchargement</a></li>
             <li><a href="backup.html">Sauvegardes</a></li>
             <li><a class="active" href="problem.html">Signaler un problème</a></li>
+
         </ul>
     </nav>
     <section>
-        <h1>Problème dans la traduction</h1>
         <h3 class="problem">Signaler un problème dans la traduction :</h3>
+
         <form target="_self" method="POST" id="form"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSevNowwgrc0XijFzPAKLEqtlxb7EuvPvvM41pETEQJtsXxekA/formResponse">
             <div class="form-group">
                 <label for="gameVersion">Version du jeu :</label>
-                <input type="text" id="gameVersion" name="entry.171569189" placeholder="2.0.5 | 2.0.1a"
-                    pattern="[0-9].[0-9].[0-9][a-z]" required />
+                <input type="text" id="gameVersion" name="entry.171569189" placeholder="2.0.5 | 2.0.1a" required />
             </div>
             <div class="form-group">
                 <label for="patchVersion">Version de la traduction :</label>
-                <input type="text" id="patchVersion" name="entry.1906005135" placeholder="2.0.10"
-                    pattern="[0-9].[0-9].[0-9][0-9]" required />
+                <input type="text" id="patchVersion" name="entry.1906005135" placeholder="2.0.10" required />
             </div>
             <div class="form-group">
                 <label for="location">Où est le problème :</label>
@@ -66,6 +65,10 @@
                     placeholder="Faut de frappe, erreur de traduction, texte qui dépasse" required cols="60"
                     rows="4"></textarea>
             </div>
+            <div class="form-group">
+                <label for="pseudo">Pseudo et/ou nom pour les crédits (pas obligatoire) :</label>
+                <input type="text" id="pseudo" name="entry.1350128701" />
+            </div>
             <button type="button" onclick="send();" class="submit-problem">Envoyer</button>
         </form>
     </section>
@@ -76,7 +79,8 @@
             let patchVersion = document.getElementById("patchVersion").value;
             let location = document.getElementById("location").value;
             let desc = document.getElementById("desc").value;
-            let link = "https://docs.google.com/forms/d/e/1FAIpQLSevNowwgrc0XijFzPAKLEqtlxb7EuvPvvM41pETEQJtsXxekA/formResponse?usp=pp_url&entry.171569189=" + gameVersion + "&entry.1906005135=" + patchVersion + "&entry.1680095167=" + location + "&entry.1262724611=" + desc;
+            let pseudo = document.getElementById("pseudo").value;
+            let link = "https://docs.google.com/forms/d/e/1FAIpQLSevNowwgrc0XijFzPAKLEqtlxb7EuvPvvM41pETEQJtsXxekA/formResponse?usp=pp_url&entry.171569189=" + gameVersion + "&entry.1906005135=" + patchVersion + "&entry.1680095167=" + location + "&entry.1262724611=" + desc + "&entry.1350128701=" + pseudo;
             link = link.split(' ').join('+')
             window.location = link;
         }
