@@ -194,3 +194,37 @@ button.submit-problem {
         margin-top: 2px;
     }
 }
+
+@media (max-width: 570px) {
+    ul.horizontal {
+        flex-direction: column;
+
+    }
+
+    #video {
+        width: auto;
+        height: auto;
+    }
+
+    section {
+        font-size: 0.8em;
+        margin: 2.5% 3% 2.5% 3%;
+    }
+
+    .header {
+        font-size: 1em;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .row {
+        grid-template-columns: 0.5fr 0.8fr 1fr;
+        gap: 10px;
+    }
+
+    .row ul {
+        padding-left: 5%;
+    }
+}
