@@ -196,6 +196,10 @@ button.submit-problem {
 }
 
 @media (max-width: 570px) {
+    p {
+        padding-right: 0;
+    }
+
     ul.horizontal {
         flex-direction: column;
 
@@ -216,7 +220,7 @@ button.submit-problem {
     }
 
     textarea {
-        width: 100%;
+        width: 95%;
     }
 
     .row {
@@ -224,7 +228,8 @@ button.submit-problem {
         gap: 10px;
     }
 
-    .row ul {
+    ul,
+    ol {
         padding-left: 5%;
     }
 }
