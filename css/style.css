@@ -129,7 +129,7 @@ button.submit-problem {
     padding: 1%;
 }
 
-.row {
+.row>p {
     a {
         display: inline-block;
         color: white;
