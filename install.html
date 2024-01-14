@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Idol - Français</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+</head>
+
+<body>
+    <h1>Installation / Désinstallation</h1>
+    <nav class="navbar">
+        <ul class="horizontal">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="download.html">Téléchargement</a></li>
+            <li><a class="active" href="install.html">Installation / Désinstallation</a></li>
+            <li><a href="backup.html">Sauvegardes</a></li>
+            <li><a href="problem.html">Signaler un problème</a></li>
+            <li><a href="choice.html">Choix de traduction</a></li>
+            <li><a href="credits.html">Crédits</a></li>
+        </ul>
+    </nav>
+    <section>
+        <p>Pour installer la traduction FR, il faut d'abord télécharger l'archive zip ici : <a
+                href="download.html">Téléchargement</a></p>
+        <p>Ces instructions sont trouvables dans le fichier IMPORTANT.txt dans l'archive zip</p>
+        <ul>
+            <li><a href="install.html#installation">Installation</a>
+                <ul>
+                    <li><a href="install.html#installation-steam">Steam</a></li>
+                    <li><a href="install.html#installation-gog">GOG</a></li>
+                </ul>
+            </li>
+            <li><a href="install.html#desinstallation">Désinstallation</a>
+                <ul>
+                    <li><a href="install.html#desinstallation-steam">Steam</a></li>
+                    <li><a href="install.html#desinstallation-gog">GOG</a></li>
+                </ul>
+            </li>
+            <li><a href="install.html#attention">Attention</a></li>
+            <li><a href="install.html#informations">Informations</a></li>
+        </ul>
+        <h2>Installation</h2>
+        <div id="installation">
+            <h3>Steam</h3>
+            <div id="installation-steam">
+                <ol>
+                    <li>Extraire les fichiers et lancer patch.bat</li>
+                    <li>Répondre 'oui' à la demande d'autoriser l'application à apporter des modifications</li>
+                    <li>Lorsque demandé, choisir le fichier game.pck dans :
+                        <p>...\Steam\steamapps\common\The Case of the Golden Idol</p>
+                        Accessible facilement sur Steam en faisant :
+                        Clique droit sur le jeu -> Gérer -> Parcourir les fichiers locaux
+                    </li>
+                </ol>
+            </div>
+            <h3>GOG</h3>
+            <div id="installation-gog">
+                <ol>
+                    <li>Extraire les fichiers et lancer patch.bat</li>
+                    <li>Répondre 'oui' à la demande d'autoriser l'application à apporter des modifications</li>
+                    <li>Lorsque demandé, choisir le fichier goldenidol.pck dans le dossier où le jeu est installé</li>
+                </ol>
+            </div>
+        </div>
+
+        <h2>Désinstallation</h2>
+        <div id="desinstallation">
+            <h3>Steam</h3>
+            <div id="desinstallation-steam">
+                <ol>
+                    <li>Clique droit sur le jeu -> Propriétés -> Fichiers installés -> Vérifier l'intégrité des fichiers
+                        du jeu</li>
+                </ol>
+            </div>
+            <h3>GOG</h3>
+            <div id="desinstallation-gog">
+                <ol>
+                    <li>Retélécharger le jeu sur GOG</li>
+                </ol>
+            </div>
+        </div>
+
+        <h2>Attention</h2>
+        <div id="attention">
+            <ul>
+                <li>Chaque mise à jour du jeu enlève la version française, je ferais en sorte de mettre à jour la
+                    version
+                    française mais il faudra quand même la réinstaller à chaque fois.</li>
+                <li>
+                    Pour installer une version plus récente de la version française, il faut d'abord désinstaller la
+                    version française.
+                </li>
+                <li>
+                    Votre progression sans ou avec la version française n'est pas la même car elle est sauvegardée sur
+                    des fichiers différents pour éviter des problèmes d'incompatibilité.
+                    Donc si vous avez déjà joué au jeu et que vous comptez le faire en français, vous devrez recommencer
+                    de zéro, mais votre progression sur le jeu normal n'est pas supprimée.
+                </li>
+            </ul>
+        </div>
+
+        <h2>Informations</h2>
+        <div id="informations">
+            <p>L'installation utilise xdelta3, un programme sous license GNL 2 téléchargeable ici :</p>
+            <a
+                href="https://github.com/jmacd/xdelta-gpl/releases/tag/v3.0.11">https://github.com/jmacd/xdelta-gpl/releases/tag/v3.0.11</a>
+            <p>Code Source :</p>
+            <a href="https://github.com/jmacd/xdelta-gpl">https://github.com/jmacd/xdelta-gpl</a>
+        </div>
+    </section>
+</body>
+
+</html>
